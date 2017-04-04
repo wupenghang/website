@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+		}
+		html{
+			font-size: 100px;
+			height: 100%;
+		}
+		body{
+			font-size: 0.16rem;
+			height: 100%;
+		}
+		/*header start*/
+		header{
+			width: 100%;
+			height: 0.4rem;
+			background-color: rgba(192,71,71,0);
+			display: flex; 
+			align-items: center;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 9999;
+		}
+		header .logo{
+			width: 0.4rem;
+			height: 0.4rem;
+			margin-left: 0.1rem;
+		}
+		header .logo > img{
+			margin-top:0.05rem;
+			width: 0.3rem;
+			height: 0.3rem;
+		}
+		header .search{
+			height: 0.3rem;
+			flex: 1;
+			display: flex;
+			align-items: center;
+			border-radius: 0.15rem;
+			background-color: white;
+			padding-right: 0.3rem;
+		}
+		header .search > img{
+			width: 0.2rem;
+			height: 0.2rem;
+			margin-left: 0.05rem;
+			margin-right:0.05rem;
+		}
+		header .search > input{
+			flex: 1;
+			outline: none;
+			border:none;
+			height: 0.3rem;
+			padding-left: 0.1rem;
+			font-size: 0.12rem;
+		}
+		header .login-btn{
+			width: 0.5rem;
+			text-align: center;
+			color: white;
+		}
+		/*header end*/
+		.container{
+			height: 100%;
+		}
+		.enterances{
+			display: flex;
+			align-items: center;
+			flex-wrap:wrap; 
+			margin: 0.06rem;
+			background-color: 
+		}
+		.enterances > div{
+			width: 0.6rem;
+			font-size: 0.12rem;
+			display:flex;
+			align-items: center;
+			flex-wrap:wrap;
+			justify-content: center;
+			margin-top: 0.1rem; 
+		}
+		.enterances > div > img{
+			width: 0.4rem;
+		}
+		.enterances > div > span{
+			margin-top: 0.1rem;
+		}
+
+		.cards{
+			display: flex;
+			flex-wrap: wrap;
+			background-color: #ed3d26;
+		}
+		.cards div{
+			width: 1.55rem;
+			padding: 0.025rem;
+		}
+		.cards div > img{
+			width: 1.55rem;
+		}
+		.channels{
+			display: flex;
+			align-items: center;
+			background-color: #ed3d26;
+		}
+		.channels div,img{
+			width: 0.8rem;
+		}
+		.ads{
+			display: flex;
+			align-items: center;
+			background-color: #ed3d26;
+		}
+		.ads  .ads_left{
+			width: 1.6rem;
+		}
+		.ads  .ads_left > img{
+			width: 1.6rem;
+		}
+		.ads > .ads_right{
+			width: 1.6rem;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+		.ads > .ads_right  img{
+			width: 1.6rem;
+		}
+		.product{
+			background-color: #d1d7dc;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		.product > div{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-start;
+			width: 1.575rem;
+			padding-top: 0.2rem;
+			margin-bottom: 0.05rem;
+			background-color: white;
+		}
+		.product > div:nth-child(2n+1){
+			 margin-right:0.025rem;
+		}
+		.product > div:nth-child(2n){
+			margin-left: 0.025rem;
+		}
+		.product > div > img{
+			width: 100%;
+		}
+		.product > div > span{
+			width: 100%;
+			text-align: center;
+			padding-top: 0.08rem;
+			font-size: 0.14rem;
+		}
+		.product > div > .info{
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0.1rem 0;
+		}
+		.product > div > .info > span{
+			color: red;
+			margin-left: 0.04rem;
+			font-size: 0.14rem;
+		}
+		.product > div > .info > p{
+			border:1px solid black;
+			border-radius:0.05rem;
+			margin-right:0.04rem;
+			padding: 0.02rem;
+			font-size: 0.12rem;
+		}
+		.space{
+			height: 0.5rem;
+		}
+		.menu{
+			width: 100%;
+			height: 0.5rem;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			box-shadow: 0 0 0.15rem 0 #ccc;
+			display: flex;
+			align-items: center;
+			background-color: white;
+		}
+		.menu > div{
+			width: 0.64rem;
+		}
+		.menu div img{
+			width: 0.6rem;
+		}
+		.menu div:nth-child(3) img{
+			width: 0.6rem;
+			transform:translateY(-0.12rem);
+		}
+		.slider{
+			width: 3.2rem;
+			height: 1.44rem;
+			overflow: hidden;
+		}
+		.slider ul{
+			width: 19.2rem;
+			display: flex;
+			align-items: center;
+			height: 1.44rem;
+			transform: translateX(-3.2rem);
+		}
+		.slider ul > li{
+			width: 3.2rem;
+			height: 1.44rem;
+		}
+		.slider ul > li > img{
+			width: 3.2rem;
+			height: 1.44rem;
+		}
+	</style>
+</head>
+<body>
+	<!--header-->
+	<header>
+		<div class="logo"><img src="statics/book.png" alt="logo"/></div>
+		<div class="search">
+			<img src="statics/search.png" alt="search"/>
+			<input type="text" name="" placeholder="安徽土特产" />
+		</div>
+		<span class="login-btn">登录</span>
+	</header>
+	<!--header end -->
+
+	<div class="container">
+		<div class="slider">
+			<ul>
+				<li>
+					<img src="statics/slide_4.jpg" alt="1"/>
+				</li>
+				<li>
+					<img src="statics/slide_1.jpg" alt=""/>
+				</li>
+				<li>
+					<img src="statics/slide_2.jpg" alt=""/>
+				</li>
+				<li>
+					<img src="statics/slide_3.jpg" alt=""/>
+				</li>
+				<li>
+					<img src="statics/slide_4.jpg" alt=""/>
+				</li>
+				<li>
+					<img src="statics/slide_1.jpg" alt=""/>
+				</li>
+			</ul>
+		</div>
+		<section class="enterances">
+			<div><img src="statics/cart.png" alt="cart"/><span>京东海鲜</span></div>
+			<div><img src="statics/cart.png" alt="cart"/><span>京东海鲜</span></div>
+			<div><img src="statics/cart.png" alt="cart"/><span>京东海鲜</span></div>
+			<div><img src="statics/cart.png" alt="cart"/><span>京东海鲜</span></div>
+			<div><img src="statics/cart.png" alt="cart"/><span>京东海鲜</span></div>
+			<div><img src="statics/cart.png" alt="cart"/><span>京东海鲜</span></div>
+			<div><img src="statics/cart.png" alt="cart"/><span>京东海鲜</span></div>
+			<div><img src="statics/cart.png" alt="cart"/><span>京东海鲜</span></div>
+			<div><img src="statics/cart.png" alt="cart"/><span>京东海鲜</span></div>
+			<div><img src="statics/cart.png" alt="cart"/><span>京东海鲜</span></div>
+		</section>
+		<section class="cards">
+			<div><img src="statics/card_1.jpg" alt="card1"/></div>
+			<div><img src="statics/card_1.jpg" alt="card1"/></div>
+			<div><img src="statics/card_1.jpg" alt="card1"/></div>
+			<div><img src="statics/card_1.jpg" alt="card1"/></div>
+		</section>
+		<section class="channels">
+			<div><img src="statics/channel_1.jpg" alt="123"/></div>
+			<div><img src="statics/channel_1.jpg" alt="123"/></div>
+			<div><img src="statics/channel_1.jpg" alt="123"/></div>
+			<div><img src="statics/channel_1.jpg" alt="123"/></div>
+		</section>
+		<section class="ads">
+			<div class="ads_left">
+				<img src="statics/ad_big.jpg" alt="ads"/>
+			</div>
+			<div class="ads_right">
+				<div><img src="statics/ad_little_2.jpg" alt="1"/></div>
+				<div><img src="statics/ad_little_2.jpg" alt="1"/></div>
+			</div>
+		</section>
+		<section class="product">
+			<div>
+				<img src="statics/product.jpg" alt="product"/>
+				<span class="product-name">中国上海品牌手表</span>
+				<div class="info">
+					<span>&yen;399.00</span>
+					<p>看相似</p>
+				</div>
+			</div>
+			<div>
+				<img src="statics/product.jpg" alt="product"/>
+				<span class="product-name">中国上海品牌手表</span>
+				<div class="info">
+					<span>&yen;399.00</span>
+					<p>看相似</p>
+				</div>
+			</div>
+			<div>
+				<img src="statics/product.jpg" alt="product"/>
+				<span class="product-name">中国上海品牌手表</span>
+				<div class="info">
+					<span>&yen;399.00</span>
+					<p>看相似</p>
+				</div>
+			</div>
+			<div>
+				<img src="statics/product.jpg" alt="product"/>
+				<span class="product-name">中国上海品牌手表</span>
+				<div class="info">
+					<span>&yen;399.00</span>
+					<p>看相似</p>
+				</div>
+			</div>
+		</section>
+		<div class="space"></div>
+	</div>
+
+	<!-- footer -->
+	<footer class="menu">
+		<div class="menu-item">
+			<img src="statics/menu_1.png" alt="">
+		</div>
+		<div class="menu-item">
+			<img src="statics/menu_2.png" alt="">
+		</div>
+		<div class="menu-item">
+			<img src="statics/menu_3.png" alt="">
+		</div>
+		<div class="menu-item">
+			<img src="statics/menu_4.png" alt="">
+		</div>
+		<div class="menu-item">
+			<img src="statics/menu_5.png" alt="">
+		</div>
+	</footer>
+	<!-- footer-end	 -->
+</body>
+</html>
+<script type="text/javascript">
+ ;(function(){
+ 	var doc = document.documentElement;
+ 	var clientWidth = doc.clientWidth;
+ 	doc.style.fontSize = clientWidth/320*100+'px';
+ })();
+</script>
+<script type="text/javascript">
+	var  productFlow = document.querySelector('.product');
+	var  product = document.querySelectorAll('.product > div');
+	function addProduct4(){
+		for(var i = 0;i < 4;i++){
+			var  oDiv = document.createElement('div');
+			productFlow.appendChild(oDiv);
+			oDiv.innerHTML = product[0].innerHTML;
+		}
+	}
+	var clientHeight = document.documentElement.clientHeight;
+	window.addEventListener('scroll',function(){
+		var scrollT = document.documentElement.scrollTop || document.body.scrollTop || window.pageYOffset;
+		var prodHeight = productFlow.offsetHeight;
+		var prodcTop = productFlow.offsetTop;
+		if((prodHeight + prodcTop) < (scrollT + clientHeight)){
+			addProduct4();
+		}
+		var header = document.querySelector('header');
+ 		header.style.backgroundColor = 'rgba(192,71,71,'+scrollT/300+')';
+	},false);
+</script>
+<script type="text/javascript">
+var aLi = document.querySelectorAll('.slider li');
+var oUl = document.querySelector('.slider ul');
+var vw = aLi[0].offsetWidth;
+var oContainer = document.querySelector('.container');
+var currentIndex = 0;
+var bReady = true;
+var timer = null;
+timer = setInterval(function(){
+	currentIndex++;
+	oUl.style.transition = '0.3s';
+	setPosition();
+},2000);
+oUl.addEventListener('touchstart',function(ev){
+	if( !bReady ) return;
+	bReady = false;
+	clearInterval(timer);
+	oUl.style.transition = '0s';
+
+	var startX = ev.targetTouches[0].clientX;
+	var disX = startX - (oUl.dataset.left || -vw);
+	oUl.addEventListener('touchmove',fnMove,false);
+	oUl.addEventListener('touchend',fnEnd,false);
+	function fnMove(ev){
+		var deltaX = ev.targetTouches[0].clientX - disX;
+		oUl.dataset.left = deltaX;
+		oUl.style.transform = `translateX(${deltaX}px)`;
+		ev.preventDefault();
+	}
+	function fnEnd(ev){
+		var endX = ev.changedTouches[0].clientX;
+		var deltaX = endX - startX;
+		if(Math.abs(deltaX) > vw/4){
+			oUl.style.transition = '0.3s';
+			if( deltaX > 0){
+				currentIndex--;
+				if(currentIndex < 0){
+					currentIndex = 0;
+				}
+			setPosition();
+			}else{
+				currentIndex++;
+				if(currentIndex > aLi.length - 1){
+					currentIndex = aLi.length - 1;
+				}
+				setPosition();
+			}
+
+		}else{
+			oUl.style.transition = '0.3s';
+			setPosition();
+		}
+		oUl.removeEventListener('touchmove',fnMove,false);
+		oUl.removeEventListener('touchend',fnEnd,false);
+		timer = setInterval(function(){
+			currentIndex++;
+			oUl.style.transition = '0.3s';
+			setPosition();
+		},2000);
+	}
+},false)
+oUl.addEventListener('transitionend',function(){
+	if( currentIndex == 0){
+		currentIndex = aLi.length - 2;
+	}else if( currentIndex == aLi.length - 1){
+		currentIndex = 1;
+	}
+	oUl.style.transition = '0s';
+	setPosition();
+	bReady = true;
+
+},false);
+function setPosition(){
+	var translate = -currentIndex*vw;
+	oUl.style.transform = `translateX(${translate}px)`;
+	oUl.dataset.left = translate;
+}
+</script>

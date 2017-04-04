@@ -1,0 +1,14 @@
+*{ margin:0; padding:0; font-size:12px;font-family:"microsoft yahei";}
+ul li,ol li{ list-style:none;}
+h1,h2,h3,h4,h5,h6,b,strong{ font-weight:normal;}
+i,em{font-style:normal;}
+a{ text-decoration:none; color:#000;}
+img{ vertical-align:top;border:none;}
+input{border:0 none;outline:none;}
+textarea{resize:none;}
+.clearfix:after{ display:block; clear:both; content:'';}
+.clearfix{zoom:1;}
+textarea{border-resize:none;}
+
+
+

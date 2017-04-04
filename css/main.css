@@ -1,0 +1,557 @@
+@media screen and (min-width: 1481px){
+			*{
+				padding: 0;
+				margin:0;
+				list-style: none;
+			}
+			.container{
+				width: 1500px;
+			}
+			.sec-one{
+				width: 80%;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				padding: 50px 0;
+			}
+			.sec-one > .right{
+				width: 35%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.sec-one > .left{
+				width: 55%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			.sec-one > .left > h2{
+				font-size: 30px;
+				line-height: 50px;
+				text-align: center;
+			}
+			.sec-one > .left > p{
+				text-indent: 2em;
+				line-height: 36px;
+			}
+			.section-two{
+				width: 100%;
+				background:url(../img/header.jpg) center;
+			}
+			.sec-two{
+				width: 80%;
+				margin: 20px auto;
+				display: flex;
+				padding: 80px 0;
+			}
+			.sec-two .two-left{
+				width: 60%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+			.sec-two .two-left .two-pic{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 50%;
+			}
+			.sec-two .two-right{
+				width: 40%;
+			}
+			.sec-two .two-right h3{
+				line-height: 50px;
+				text-align: center;
+				font-size: 30px;
+			}
+			.sec-two .two-right p{
+				line-height: 30px;
+				text-indent: 2em;
+			}
+
+			.sec-three{
+				width: 80%;
+				margin: 0 auto;
+				padding: 70px 0;
+			}
+			.sec-three h4{
+				line-height: 100px;
+				font-size: 40px;
+				text-align: center;
+			}
+			.sec-three .wrapper{
+				padding-top: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			.sec-three .wrapper .mod{
+				width:27%;
+			}
+			.sec-three .wrapper .mod .three-pic img{
+				width: 100%;
+			}
+			.sec-three .wrapper .mod h5{
+				text-align: center;
+				font-size: 20px;
+				line-height: 60px;
+			}
+			.sec-three .wrapper .mod p{
+				text-indent: 2em;
+			}
+			footer h6{
+				padding: 70px 0;
+				text-align: center;
+				font-size: 30px;
+				border: 1px solid white;
+				background:url(../img/header.jpg) center;
+			}
+		}
+
+		@media screen and (max-width: 1480px) and (min-width: 1190px){
+			*{
+				padding: 0;
+				margin:0;
+				list-style: none;
+			}
+			.sec-one{
+				width: 80%;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				padding: 50px 0;
+			}
+			.sec-one > .right{
+				width: 35%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.sec-one > .left{
+				width: 55%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			.sec-one > .left > h2{
+				font-size: 30px;
+				line-height: 50px;
+				text-align: center;
+			}
+			.sec-one > .left > p{
+				text-indent: 2em;
+				line-height: 36px;
+			}
+			.section-two{
+				width: 100%;
+				background:url(../img/header.jpg) center;
+			}
+			.sec-two{
+				width: 80%;
+				margin: 20px auto;
+				display: flex;
+				padding: 80px 0;
+			}
+			.sec-two .two-left{
+				width: 60%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+			.sec-two .two-left .two-pic{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 50%;
+			}
+			.sec-two .two-right{
+				width: 40%;
+			}
+			.sec-two .two-right h3{
+				line-height: 50px;
+				text-align: center;
+				font-size: 30px;
+			}
+			.sec-two .two-right p{
+				line-height: 30px;
+				text-indent: 2em;
+			}
+
+			.sec-three{
+				width: 80%;
+				margin: 0 auto;
+				padding: 70px 0;
+			}
+			.sec-three h4{
+				line-height: 100px;
+				font-size: 40px;
+				text-align: center;
+			}
+			.sec-three .wrapper{
+				padding-top: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			.sec-three .wrapper .mod{
+				width:27%;
+			}
+			.sec-three .wrapper .mod .three-pic img{
+				width: 100%;
+			}
+			.sec-three .wrapper .mod h5{
+				text-align: center;
+				font-size: 20px;
+				line-height: 60px;
+			}
+			.sec-three .wrapper .mod p{
+				text-indent: 2em;
+			}
+			footer h6{
+				padding: 70px 0;
+				text-align: center;
+				font-size: 30px;
+				border: 1px solid white;
+				background:url(../img/header.jpg) center;
+			}
+		}
+
+		@media screen and (max-width: 1189px) and (min-width: 900px){
+			*{
+				padding: 0;
+				margin:0;
+				list-style: none;
+			}
+			.sec-one{
+				width: 80%;
+				margin: 0 auto;
+				display: flex;
+				flex-direction: column;
+				justify-content: center; 
+				padding: 50px 0;
+			}
+			.sec-one > .right{
+				padding: 30px 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.sec-one > .left{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			.sec-one > .left > h2{
+				line-height: 50px;
+				text-align: center;
+			}
+			.sec-one > .left > p{
+				text-indent: 2em;
+				line-height: 35px;
+			}
+			.section-two{
+				width: 100%;
+				background:url(../img/header.jpg) center;
+			}
+			.sec-two{
+				width: 80%;
+				margin: 20px auto;
+				display: flex;
+				padding: 60px 0;
+			}
+			.sec-two .two-left{
+				width: 60%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+			.sec-two .two-left .two-pic{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 50%;
+			}
+			.sec-two .two-right{
+				width: 40%;
+			}
+			.sec-two .two-right h3{
+				line-height: 50px;
+				text-align: center;
+				font-size: 30px;
+			}
+			.sec-two .two-right p{
+				line-height: 30px;
+				text-indent: 2em;
+			}
+
+			.sec-three{
+				width: 80%;
+				margin: 0 auto;
+				padding: 70px 0;
+			}
+			.sec-three h4{
+				line-height: 100px;
+				font-size: 40px;
+				text-align: center;
+			}
+			.sec-three .wrapper{
+				padding-top: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			.sec-three .wrapper .mod{
+				width:27%;
+			}
+			.sec-three .wrapper .mod .three-pic img{
+				width: 100%;
+			}
+			.sec-three .wrapper .mod h5{
+				text-align: center;
+				font-size: 20px;
+				line-height: 60px;
+			}
+			.sec-three .wrapper .mod p{
+				text-indent: 2em;
+			}
+			footer h6{
+				padding: 70px 0;
+				text-align: center;
+				font-size: 30px;
+				border: 1px solid white;
+				background:url(../img/header.jpg) center;
+			}
+		}
+		
+		@media screen and (max-width: 899px) and (min-width: 680px){
+			*{
+				padding: 0;
+				margin:0;
+				list-style: none;
+			}
+			.sec-one{
+				width: 80%;
+				margin: 0 auto;
+				display: flex;
+				flex-direction: column;
+				justify-content: center; 
+				padding: 50px 0;
+			}
+			.sec-one > .right{
+				padding: 30px 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.sec-one > .left{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			.sec-one > .left > h2{
+				line-height: 50px;
+				text-align: center;
+			}
+			.sec-one > .left > p{
+				text-indent: 2em;
+				line-height: 35px;
+			}
+			.section-two{
+				width: 100%;
+				background:url(../img/header.jpg) center;
+			}
+			.sec-two{
+				width: 80%;
+				margin: 20px auto;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				padding: 40px 0;
+			}
+			.sec-two .two-left{
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				flex-wrap: wrap;
+			}
+			.sec-two .two-left .two-pic{
+				width: 25%;
+				height: 9rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.sec-two .two-right h3{
+				line-height: 50px;
+				text-align: center;
+				font-size: 30px;
+				padding: 0 1rem;
+			}
+			.sec-two .two-right p{
+				line-height: 36px;
+				text-indent: 2em;
+			}
+
+			.sec-three{
+				width: 80%;
+				margin: 0 auto;
+				padding: 70px 0;
+			}
+			.sec-three h4{
+				line-height: 100px;
+				font-size: 40px;
+				text-align: center;
+			}
+			.sec-three .wrapper{
+				padding-top: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			.sec-three .wrapper .mod{
+				width:27%;
+			}
+			.sec-three .wrapper .mod .three-pic img{
+				width: 100%;
+			}
+			.sec-three .wrapper .mod h5{
+				text-align: center;
+				font-size: 16px;
+				line-height: 30px;
+			}
+			.sec-three .wrapper .mod p{
+				text-indent: 2em;
+			}
+			footer{
+				padding: 3rem 0;
+				background:url(../img/header.jpg) center;
+			}
+			footer h6{
+				width: 80%;
+				margin: 0 auto;
+				text-align: center;
+				font-size: 24px;
+				border: 1px solid white;
+				padding: 5px;
+			}
+		}
+		
+		@media screen and (max-width: 679px) and (min-width: 320px){
+			*{
+				padding: 0;
+				margin:0;
+				list-style: none;
+			}
+			.sec-one{
+				margin: 0 auto;
+				display: flex;
+				flex-direction: column;
+				justify-content: center; 
+				padding: 50px 0;
+			}
+			.sec-one > .right > img{
+				width: 100%;
+			}
+			.sec-one > .left{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			.sec-one > .left > h2{
+				line-height: 50px;
+				text-align: center;
+			}
+			.sec-one > .left > p{
+				text-indent: 2em;
+				line-height: 35px;
+				padding: 0 2rem;
+			}
+			.section-two{
+				width: 100%;
+				background:url(../img/header.jpg) center;
+			}
+			.sec-two{
+				margin: 20px auto;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				padding: 30px 0;
+			}
+			.sec-two .two-left{
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				flex-wrap: wrap;
+			}
+			.sec-two .two-left .two-pic{
+				width: 50%;
+				height: 7rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.sec-two .two-right{
+			}
+			.sec-two .two-right h3{
+				line-height: 50px;
+				text-align: center;
+				font-size: 30px;
+			}
+			.sec-two .two-right p{
+				line-height: 36px;
+				text-indent: 2em;
+				padding: 0 2rem;
+			}
+
+			.sec-three{
+				margin: 0 auto;
+				padding: 40px 0;
+			}
+			.sec-three h4{
+				line-height: 50px;
+				font-size: 30px;
+				font-weight: 700;
+				text-align: center;
+			}
+			.sec-three .wrapper{
+				padding-top: 20px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			.sec-three .wrapper .mod .three-pic img{
+				width: 100%;
+			}
+			.sec-three .wrapper .mod{
+				margin-bottom: 2rem;
+			}
+			.sec-three .wrapper .mod h5{
+				text-align: center;
+				font-size: 20px;
+				line-height: 60px;
+			}
+			.sec-three .wrapper .mod p{
+				text-indent: 2em;
+				line-height: 30px;
+				padding: 0 2rem;
+			}
+			footer{
+				padding: 3rem 0;
+				background:url(../img/header.jpg) center;
+			}
+			footer h6{
+				text-align: center;
+				font-size: 24px;
+				border: 1px solid white;
+				padding: 5px;
+			}
+		}
