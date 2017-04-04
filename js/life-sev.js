@@ -14,7 +14,7 @@
 		}
 		function jsonp(){
 			jsonP({
-				url:'http://api.asilu.com/weather/',
+				url:'https://api.asilu.com/weather/',
 				data:{
 					city:oT.value
 				},
